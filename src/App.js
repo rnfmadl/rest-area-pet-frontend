@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pet/component/pages/HomePage';
+import PetSearchPage from './pet/component/pages/PetSearchPage';
+import PetMapPage from './pet/component/pages/PetMapPage';
+import LoginPage from './pet/component/pages/LoginPage';
+import SignUpPage from './pet/component/pages/SignUpPage.jsx';
+import { AuthProvider } from './pet/component/AuthContext';
+import PetReviewPage from './pet/component/pages/PetReviewPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/pet-search" element={<PetSearchPage />} />
+          <Route path="/pet-map" element={<PetMapPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/pet-review" element={<PetReviewPage />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
 
