@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# 펫레스트 (PetRest)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**펫레스트**는 반려동물과 함께 이동할 때 전국의 반려동물 휴게소를 쉽게 찾고, 각 휴게소의 편의시설 정보를 간편하게 확인할 수 있는 웹 서비스입니다. 추석, 설 명절이나 장기 여행 시, 반려동물과 함께 이동하는 사용자들에게 최적의 정보를 제공합니다.
 
-## Available Scripts
+(./public/img/Map.png)
 
-In the project directory, you can run:
+## 주요 기능
 
-### `npm start`
+### 1. 휴게소 검색 및 위치 조회
+- 사용자는 지역별로 전국의 반려동물 휴게소 목록을 쉽게 검색할 수 있습니다.
+- 각 휴게소의 위치를 지도에서 확인하고, 관련 사진을 함께 볼 수 있습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. 편의시설 정보 제공
+- 각 휴게소의 반려동물 친화적 편의시설 정보 제공:
+  - **반려동물 놀이터**
+  - **물 공급대**
+  - **산책로**
+  - 기타 반려동물 편의시설
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. 서비스 안내
+펫레스트는 간단한 사용자 인터페이스를 통해 빠르게 원하는 정보를 찾을 수 있습니다.
+- 특정 지역의 휴게소를 검색하고, 해당 휴게소의 사진 및 편의시설 정보를 한눈에 확인할 수 있습니다.
+- 지도에서 마커를 클릭하면 휴게소 이름과 편의시설 사진이 표시됩니다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 기술 스택
+- **프론트엔드**: HTML, CSS, JavaScript (React.js)
+- **맵 서비스**: Google Maps API
+- **데이터 소스**: 한국도로공사의 공공 API
